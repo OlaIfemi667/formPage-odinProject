@@ -30,10 +30,10 @@
         <div id="form">
             <h3>Let's do this!</h3>
             <form action="">
-                <div><label for="firstName">FIRST NAME</label><input type="text"></div>
-                <div><label for="lastName">LAST NAME</label><input type="text"></div>
-                <div><label for="email">EMAIL</label><input type="email" pattern=".+@example\.com"  required></div>
-                <div><label for="phoneNumber">PHONE NUMBER</label><input type="tel" pattern="^\+[1-9]\d{1,14}$" required></div>
+                <div><label for="firstName">FIRST NAME</label><input type="text" placeholder="Ex: John"></div>
+                <div><label for="lastName">LAST NAME</label><input type="text" placeholder="Ex: Doe"></div>
+                <div><label for="email">EMAIL</label><input type="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"  placeholder="Ex: name@domain.bj"></div>
+                <div><label for="phoneNumber">PHONE NUMBER</label><input type="tel" pattern="^\+[1-9]\d{1,14}$" placeholder="+22911111111"></div>
                 <div><label for="password">PASSWORD</label><input type="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required></div>
                 <div><label for="passwordConfirm">CONFIRM PASSWORD</label><input type="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required></div>
             </form>
